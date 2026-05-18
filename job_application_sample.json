@@ -1,0 +1,83 @@
+{
+    "Application_details": {
+        "position applied for": "Data Annotator",
+        "application_date": "2026-05-18"
+    },
+    "Applicant_personal_details": {
+        "full_name": "John Ehigiator",
+        "date_of_birth": "1999-09-06",
+        "gender": "Male",
+        "nationality": "Nigerian",
+        "residential_address": "No. 4, Zabada close, beside Ojo Main Market, Ojota, Lagos, Nigeria",
+        "email": "john.doe@example.com",
+        "linkedin_profile": "https://www.linkedin.com/in/john-ehigiator-ab1234567",
+        "phone_number": "+234 803 456 7890"
+    },
+    "Educational_background": [
+        {
+            "highest_degree": "Bachelor's Degree",
+            "field_of_study": "Computer Science",
+            "university_name": "University of Lagos",
+            "graduation_year": 2021
+        },
+        {
+            "highest_degree": "Master's Degree",
+            "field_of_study": "Data Science",
+            "university_name": "University of Ibadan",
+            "graduation_year": 2024
+        }
+    ],
+    "Work_experience": [
+        {
+            "job_title": "Data Annotator",
+            "company_name": "Tech Solutions Ltd.",
+            "start_date": "2021-07-01",
+            "end_date": "2023-06-30",
+            "responsibilities": [
+                "Annotated and labeled large datasets for machine learning models.",
+                "Collaborated with data scientists to ensure high-quality annotations.",
+                "Maintained accurate records of annotation processes and results."
+            ]
+        },
+        {
+            "job_title": "Junior Data Analyst",
+            "company_name": "Data Insights Inc.",
+            "start_date": "2023-07-01",
+            "end_date": "2024-05-31",
+            "responsibilities": [
+                "Analyzed data trends and generated reports for stakeholders.",
+                "Created visualizations to communicate insights effectively."
+            ]
+        }
+    ],
+    "Skills": [
+        {
+            "name": "Python programming"
+        },
+        {
+            "name": "Data analysis"
+        },
+        {
+            "name": "Machine learning"
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Smith",
+            "relationship": "Former Supervisor",
+            "work_place": "Tech Solutions Ltd.",
+            "phone_number": "+234 803 123 4567",
+            "email_address": "jane.smith@example.com"
+        },
+        {
+            "name": "Michael Johnson",
+            "relationship": "Colleague",
+            "work_place": "Data Insights Inc.",
+            "phone_number": "+234 803 987 6543",
+            "email_address": "michael.johnson@example.com"
+        }
+    ],
+     "validation_summary": {
+        "overall_status": "PASS"
+     }
+}

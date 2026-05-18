@@ -1,0 +1,147 @@
+{
+    "$schema_name":"Job application form schema",
+    "required_fields": [
+        "Application_details",
+        "Applicant_personal_details",
+        "Educational_background",
+        "Work_experience",
+        "Skills",
+        "References",
+        "validation_summary"
+    ],
+    "field_rules": {
+        "Application_details":{
+            "position applied for":{
+                 "type": "string",
+                 "min_length": 2
+                 },
+                 "application_date":{
+                    "type": "string",
+                    "format": "YYYY-MM-DD",
+                    "example": "2024-03-15"
+                 }
+        },
+        "Applicant_personal_details": {
+            "type": "object",
+            "fields":{
+                "full_name": {
+                    "type":"string"
+                },
+                "date_of_birth":{
+                    "type":"string",
+                    "format":"YYYY-MM-DD"
+                },
+                "gender": {
+                    "type":"string"
+                },
+                "nationality": {
+                    "type":"string"
+                },
+                "residential_address": {
+                    "type":"string"
+                },
+                "emal_address": {
+                    "type":"string"
+                },
+                "linkedin_profile": {
+                    "type":"string"
+                },
+                "phone_number": {
+                    "type":"string"
+                }
+            }
+        },
+        "educational_background": {
+            "type":"array",
+            "items": {
+                "type":"object",
+                "fields":{
+                    "institution_name": {
+                        "type":"string"
+                    },
+                    "qualification": {
+                        "type":"string"
+                    },
+                    "field_of_study": {
+                        "type":"string"
+                    },
+                    "graduation_year": {
+                        "type":"string"
+                    }
+                }
+            }
+        },
+        "Work_experience": {
+            "type": "array",
+            "items": {
+                "type":"object",
+                "fields":{
+                    "company_name": {
+                        "type":"string"
+                    },
+                    "job_title": {
+                        "type":"string"
+                    },
+                    "from_date": {
+                        "type":"string",
+                        "format":"YYYY-MM-DD"
+                    },
+                    "to_date": {
+                        "type":"string",
+                        "format":"YYYY-MM-DD"
+                    },
+                    "responsibilities": {
+                        "type":"string"
+                    }
+                }
+            }
+        },"Skills": {
+            "type":"array",
+            "items":{
+                "type":"object",
+                "fields":{
+                    "skill_name": {
+                        "type":"string"
+                    }
+                }
+            }
+        },
+        "References": {
+            "type":"array",
+            "items":{
+                "type":"object",
+                "fields":{
+                    "full_name":{
+                        "type":"string"
+                    },
+                    "relationship": {
+                        "type":"string"
+                    },
+                    "work_place": {
+                        "type":"string"
+                    },
+                    "phone_number":{
+                        "type":"string"
+                    },
+                    "emal_address":{
+                        "type":"string"
+                    }
+                }
+            }
+        },
+        "validation_summary":{
+            "type":"object",
+            "fields":[
+                "overall_status",
+                "errors_found"
+            ],
+            "overall_status": {
+                "type":"string",
+                "allowed_values": [ "PASS", "FAIL"]
+            },
+            "errors_found": {
+                "type":"array"
+            }
+        }
+   }
+}
