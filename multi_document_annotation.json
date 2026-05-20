@@ -1,0 +1,69 @@
+{
+    "document_type": "contract",
+     "agreement_terms": {
+        "title": "Agreement",
+        "signing_date": "2024-01-15",
+        "location": "Abuja"
+        },
+    "Parties": {
+        "Party1": {
+            "name": "Seplat Energy Plc",
+            "type": "ORGANIZATION"
+        },
+        "Party2": {
+            "name": "Nigerian Upstream Petroleum Regulatory Commission (NUPRC)",
+            "type": "GOVERNMENT_AGENCY"
+        }
+    },
+     "entities": [
+        {"text": "Seplat Energy Plc", "label": "ORGANIZATION"},
+        {"text": "Nigerian Upstream Petroleum Regulatory Commission (NUPRC)", "label": "GOVERNMENT_AGENCY"},
+        {"text": "2024-01-15", "label": "DATE"},
+        {"text": "Abuja", "label": "LOCATION"}
+    ],
+    "document_references": [
+        {
+            "name": "Environmental Impact Assessment Report",
+            "date": "2023-12-10",
+            "relationship": "incorporated_by_reference"
+        },
+        {
+            "name": " Community Development Agreement",
+            "date": "2024-01-05",
+            "relationship": "incorporated_by_reference"
+        },
+        {
+            "name": "Ministerial Consent Letter",
+            "issuer": "Ministry of Petroleum Resources",
+            "date": "2024-01-12",
+            "relationship": "incorporated_by_reference"
+       }  
+    ],
+    "relationships": [
+        {
+            "type": "PARTY_TO_AGREEMENT",
+            "from": "Seplat Energy Plc",
+            "to": "Nigerian Upstream Petroleum Regulatory Commission",
+            "description": "Seplat Energy Plc and NUPRC are the two primary contracting parties"
+        },
+        {
+            "type": "INCORPORATES_BY_REFERENCE",
+            "from": "Main Contract",
+            "to": "Environmental Impact Assessment Report"
+        },
+        {
+            "type": "INCORPORATES_BY_REFERENCE",
+            "from": "Main Contract",
+            "to": "Community Development Agreement"
+        },
+        {
+            "type": "INCORPORATES_BY_REFERENCE",
+            "from": "Main Contract",
+            "to": "Ministerial Consent Letter"
+        }
+    ],
+   "validation_summary": {
+        "overall_status": "PASS",
+        "errors_found": []
+    }
+}
