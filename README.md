@@ -21,3 +21,37 @@ Skills demonstrated:
 - Field level validation rules
 - Data type enforcement
 - Required field definition
+### 2. Reconciliation Annotation
+A reconciliation validation annotation comparing a purchase 
+order against an invoice, flagging every discrepancy and 
+producing an overall PASS or FAIL status.
+
+Files:
+- reconciliation_annotation.json
+
+Skills demonstrated:
+- Cross document validation
+- Field level reconciliation
+- Discrepancy documentation
+- Financial QA annotation
+
+---
+
+### 3. Multi Document Annotation
+A complex annotation of a contract extract that references 
+three external documents, capturing all named entities, 
+document references, and entity relationships.
+
+Files:
+- multi_document_annotation.json
+
+Skills demonstrated:
+- Named entity recognition
+- Relationship annotation
+- Multi document referencing
+- Complex nested JSON structuring
+- 
+## Validation
+All JSON files in this repository have been validated using 
+JSONLint (jsonlint.com) before upload. Each file is 
+syntactically correct and structurally consistent.
