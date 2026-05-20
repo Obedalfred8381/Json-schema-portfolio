@@ -1,0 +1,76 @@
+{
+  "po_number": "PO-2024-088",
+  "invoice_id": "INV-2024-201",
+  "reconciliation_date": "2026-05-20",
+  "overall_status": "FAIL",
+  "match_summary": {
+    "vendor_match": true,
+    "item_count_match": true,
+    "total_match": false,
+    "price_match": false
+  },
+  "discrepancies": [
+    {
+      "field": "items[1].unit_price",
+      "description": "Office Desk",
+      "po_value": 45000,
+      "invoice_value": 47000,
+      "difference": 2000,
+      "status": "MISMATCH"
+    },
+    {
+      "field": "total",
+      "description": "Overall Total",
+      "po_value": 505000,
+      "invoice_value": 515000,
+      "difference": 10000,
+      "status": "MISMATCH"
+    }
+  ],
+  "field_comparisons": [
+    {
+      "field": "vendor",
+      "po_value": "Zenith Supplies",
+      "invoice_value": "Zenith Supplies",
+      "status": "MATCH"
+    },
+    {
+      "field": "item_description",
+      "po_value": "Office Chair",
+      "invoice_value": "Office Chair",
+      "status": "MATCH"
+    },
+    {
+      "field": "qty",
+      "po_value": 10,
+      "invoice_value": 10,
+      "status": "MATCH"
+    },
+    {
+      "field": "unit_price",
+      "po_value": 28000,
+      "invoice_value": 28000,
+      "status": "MATCH"
+    },
+    {
+      "field": "description",
+      "po_value": "Office Desk",
+      "invoice_value": "Office Desk",
+      "status": "MATCH"
+    },
+    {
+      "field": "qty",
+      "po_value": 5,
+      "invoice_value": 5,
+      "status": "MATCH"
+    }
+  ],
+  "calculation_validation": {
+    "po_total_verified": true,
+    "invoice_total_verified": true,
+    "expected_invoice_total_based_on_po": 505000,
+    "actual_invoice_total": 515000
+  },
+  "recommendation": "Invoice should be rejected or amended. The unit price for Office Desk was inflated by ₦2,000, leading to an overcharge of ₦10,000.",
+  "final_status": "FAIL"
+} 
