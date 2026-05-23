@@ -1,0 +1,19 @@
+### 3. Financial Package Annotation
+A complete multi-document financial package annotation
+linking an invoice, purchase order, service contract,
+and KYC verification form through a master annotation file.
+
+Files (in financial-package-annotation folder):
+- invoice_annotation.json
+- po_annotation.json
+- contract_annotation.json
+- kyc_annotation.json
+- master_annotation.json
+
+Skills demonstrated:
+- Multi-document annotation and linking
+- Cross-document validation
+- KYC field level annotation with pattern validation
+- Contract annotation with obligations and payment terms
+- Invoice and PO reconciliation
+- Master document architecture
