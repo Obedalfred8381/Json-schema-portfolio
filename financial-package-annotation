@@ -1,19 +1,38 @@
-### 3. Financial Package Annotation
-A complete multi-document financial package annotation
-linking an invoice, purchase order, service contract,
-and KYC verification form through a master annotation file.
-
-Files (in financial-package-annotation folder):
-- invoice_annotation.json
-- po_annotation.json
-- contract_annotation.json
-- kyc_annotation.json
-- master_annotation.json
-
-Skills demonstrated:
-- Multi-document annotation and linking
-- Cross-document validation
-- KYC field level annotation with pattern validation
-- Contract annotation with obligations and payment terms
-- Invoice and PO reconciliation
-- Master document architecture
+{
+  "package_id": "PKG-2024-001",
+  "package_type": "VENDOR_FINANCIAL_PACKAGE",
+  "documents": [
+    {
+      "document_id": "ZPS-INV-441",
+      "type": "INVOICE",
+      "file": "invoice_annotation.json",
+      "status": "VALIDATED"
+    },
+    {
+      "document_id": "PO-2024-992",
+      "type": "PURCHASE_ORDER",
+      "file": "po_annotation.json",
+      "status": "VALIDATED"
+    },
+    {
+      "document_id": "CTR-2024-NG-001",
+      "type": "CONTRACT",
+      "file": "contract_annotation.json",
+      "status": "VALIDATED"
+    },
+    {
+      "document_id": "KYC-2024-00441",
+      "type": "KYC_FORM",
+      "file": "kyc_annotation.json",
+      "status": "VALIDATED"
+    }
+  ],
+  "cross_document_validation": {
+    "vendor_name_consistent": true,
+    "invoice_matches_po": true,
+    "contract_covers_period": true,
+    "kyc_vendor_matches_invoice": true,
+    "overall_status": "PASS",
+    "errors_found": []
+  }
+}
