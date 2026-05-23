@@ -1,0 +1,72 @@
+{
+  "doc_type": "SERVICE_CONTRACT",
+  "contract_id": "CTR-2024-NG-001",
+  "contract_summary": {
+        "agreement_type": "Service Agreement",
+        "effective_date": "2024-03-25",
+        "status": "ACTIVE",   
+     "parties": [
+        {
+            "id": "PARTY-01",
+            "name": "Zamfara Produce Suppliers",
+            "label": "PARTY",
+        "role": "Service Provider",
+        "type": "ORGANISATION"
+    },
+    {
+        "id": "PARTY-02",
+        "name": "Salamatu Giwa Farms",
+        "label": "PARTY",
+        "role": "Client",
+        "type": "ORGANISATION"
+    }
+    ],
+    "scope_of_work": {
+        "service_description": "Supply of agricultural produce including rice, vegetable oil, and beans."
+    },
+    "duration": {
+        "start_date": "2024-03-25",
+        "end_date": "2024-04-24",
+        "total_days": 30,
+        "duration_working": "25 March 2024 to 24 April 2024 = 30 days"
+    },
+    "termination_clause": {
+  "specified": false,
+  "note": "No termination clause stated in source document"
+},
+    "payment_terms": {
+  "total_fee": 1677000,
+  "currency": "NGN",
+  "payment_structure": "FULL_PAYMENT",
+  "due_date": "2024-04-25",
+  "reference_invoice": "ZPS-INV-441",
+  "reference_po": "PO-2024-992",
+  "validation": "Total fee matches invoice ZPS-INV-441 grand total of 1677000 PASS"
+},
+    "legal": {
+    "governing_law": "Laws of the Federal Republic of Nigeria"
+    },
+    "obligations": [
+      {
+        "party_id": "PARTY-01",
+        "label": "OBLIGATION",
+        "description": "Deliver the specified agricultural produce in accordance with the agreed quantities and quality standards."
+      },
+      {
+        "party_id": "PARTY-02",
+        "label": "OBLIGATION",
+        "description": "Make payment in full for the delivered goods by the due date."
+      }
+    ],
+    "validation_summary": {
+        "parties_valid": true,
+        "scope_valid": true,
+        "duration_valid": true,
+        "payment_terms_valid": true,
+        "legal_valid": true,
+        "obligations_valid": true,
+        "overall_status": "PASS",
+        "errors_found": []
+    }
+}
+}

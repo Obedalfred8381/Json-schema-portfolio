@@ -1,0 +1,71 @@
+{
+  "doc_type": "KYC_VERIFICATION",
+  "form_id": "KYC-2024-00441",
+"submission_date": "2024-03-25",
+  "entity_name": "Zamfara Produce Suppliers",
+  "registration_number": "RC-887665",
+  "directors": ["Adebayo Alade", "Chinyere Okafor"],
+   "fields": [
+  {
+    "field_name": "entity_name",
+    "field_label": "Business Name",
+    "value": "Zamfara Produce Suppliers",
+    "data_type": "string",
+    "validation": "PASS"
+  },
+  {
+    "field_name": "registration_number",
+    "field_label": "CAC Registration Number",
+    "value": "RC-887665",
+    "data_type": "string",
+    "pattern": "^RC[0-9]{6}$",
+    "pattern_validation": "RC followed by 6 digits PASS",
+    "validation": "PASS"
+  },
+  {
+    "field_name": "directors",
+    "field_label": "Company Directors",
+    "value": ["Adebayo Alade", "Chinyere Okafor"],
+    "data_type": "array",
+    "validation": "PASS"
+  },
+  {
+    "field_name": "tax_clearance",
+    "field_label": "Tax Clearance Status",
+    "value": "VALID_UNTIL_DEC_2026",
+    "data_type": "string",
+    "validation": "PASS"
+  },
+  {
+    "field_name": "aml_check",
+    "field_label": "Anti Money Laundering Check",
+    "value": "PASS",
+    "data_type": "string",
+    "validation": "PASS"
+  },
+  {
+    "field_name": "ubo_verified",
+    "field_label": "Ultimate Beneficial Owner Verified",
+    "value": true,
+    "data_type": "boolean",
+    "validation": "PASS"
+  }
+],
+ "completion_check": {
+  "total_fields": 6,
+  "completed_fields": 6,
+  "empty_fields": 0,
+  "overall_status": "PASS"
+  },
+   "cross_document_validation": {
+    "vendor_name_matches_invoice": true,
+    "vendor_name_matches_po": true,
+    "reference_invoice": "ZPS-INV-441",
+    "reference_po": "PO-2024-992",
+    "reference_contract": "CTR-2024-NG-001"
+  },
+   "validation_summary": {
+    "overall_status": "PASS",
+    "errors_found": []
+   }
+}

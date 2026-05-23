@@ -1,0 +1,54 @@
+{
+  "doc_type": "INVOICE",
+  "invoice_type": "STANDARD",
+  "is_legally_binding": true,
+  "vendor": "Zamfara Produce Suppliers",
+  "invoice_number": "ZPS-INV-441",
+  "date": "2024-03-25",
+  "due_date": "2024-04-25",
+  "bill_to": "Salamatu Giwa Farms",
+  "line_items": [
+    {
+      "description": "Rice (50kg)",
+      "qty": 20,
+      "unit_price": 38000,
+      "total": 760000,
+      "validation": {
+    "gross_check": "20 x 38000 = 760000 PASS"
+         }
+    },
+    {
+      "description": "Vegetable Oil",
+      "qty": 10,
+      "unit_price": 12500,
+      "total": 125000,
+      "validation": {
+    "gross_check": "10 x 12500 = 125000 PASS"
+        }
+    },
+    {
+      "description": "Beans (50kg)",
+      "qty": 15,
+      "unit_price": 45000,
+      "total": 675000,
+      "validation": {
+    "gross_check": "15 x 45000 = 675000 PASS"
+         }
+    }
+    ],
+    "subtotal": 1560000,
+  "vat_rate": 0.075,
+  "vat_amount": 117000,
+  "grand_total": 1677000,
+  "validation_summary": {
+    "line_items_valid": true,
+    "subtotal_valid": true,
+  "subtotal_working": "760000 + 125000 + 675000 = 1560000",
+  "vat_valid": true,
+  "vat_working": "1560000 x 0.075 = 117000",
+    "grand_total_valid": true,
+  "grand_total_working": "1560000 + 117000 = 1677000",
+    "overall_status": "PASS",
+    "errors_found": []
+}
+}
